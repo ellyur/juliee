@@ -33,7 +33,7 @@ const HeroSection = () => {
             {animationsEnabled ? (
               <TypeAnimation
                 sequence={[
-                  'RICO DIMAIWAT\n&\nJULIE ANN BOAQUIÑA',
+                  'Rico\n&\nJulie',
                   () => {
                     setShowElements(true);
                   }
@@ -56,11 +56,11 @@ const HeroSection = () => {
                 }}
                 className="typewriter-text"
               >
-                RICO DIMAIWAT
+                Rico
                 <br />
                 &
                 <br />
-                JULIE ANN BOAQUIÑA
+                Julie
               </span>
             )}
           </h1>
