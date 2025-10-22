@@ -52,7 +52,7 @@ const HashtagGiftsSection = () => {
             transition={{ duration: 0.6, delay: 0.9 }}
           >
             <p 
-              className="text-lg text-foreground leading-relaxed"
+              className="text-lg text-foreground leading-relaxed mb-6"
               data-testid="text-social-message"
             >
               We'd love to see the beautiful moments you capture on our special day!
@@ -60,6 +60,11 @@ const HashtagGiftsSection = () => {
               <br />
               Kindly mention us on our social media accounts when you share photos and videos from the celebration.
             </p>
+            <div className="bg-primary/10 border border-primary/20 rounded-lg p-4">
+              <p className="text-2xl font-semibold text-primary tracking-wide" data-testid="text-wedding-hashtag">
+                #aveRICOlorfuljourneywithJULIE
+              </p>
+            </div>
           </motion.div>
         </motion.div>
 
