@@ -198,7 +198,7 @@ export default function ScrollTriggeredTimeline() {
                     <h2 className="text-4xl md:text-5xl font-serif italic mb-4 text-primary" data-testid="text-timeline-title">
                         Our Wedding Day
                     </h2>
-                    <p className="max-w-2xl mx-auto text-[#333333]">
+                    <p className="max-w-2xl mx-auto text-foreground">
                         Join us as we celebrate our love story. Here's what to expect on our special day.
                     </p>
                 </motion.div>
@@ -218,9 +218,9 @@ export default function ScrollTriggeredTimeline() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
                 <div className="inline-flex items-center space-x-2">
-                    <div className="w-8 h-px bg-[#ffffff]"></div>
-                    <div className="w-2 h-2 bg-[#ffffff] rounded-full animate-pulse"></div>
-                    <div className="w-8 h-px bg-[#ffffff]"></div>
+                    <div className="w-8 h-px bg-primary/40"></div>
+                    <div className="w-2 h-2 bg-primary/40 rounded-full animate-pulse"></div>
+                    <div className="w-8 h-px bg-primary/40"></div>
                 </div>
                 <p className="mt-4 text-muted-foreground font-body italic">
                     Our Love Shines Till Evening

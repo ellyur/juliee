@@ -2,85 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Elegant Design System - White & Dark Gray */
+/* Modern Elegant Design System - Emerald Green */
 
 @layer base {
   :root {
-    /* 70-20-10 Color Rule: Elegant White & Gray Theme */
+    /* 70-20-10 Color Rule: Elegant Emerald Green Theme */
     
-    /* 70% PRIMARY - Pure White Background */
-    --background: 0 0% 100%; /* Pure white background */
-    --foreground: 0 0% 20%; /* #333333 dark gray text */
+    /* 70% PRIMARY - Light Emerald Background */
+    --background: 140 30% 97%; /* Very light emerald background */
+    --foreground: 140 80% 25%; /* Dark emerald text */
 
     /* Card Colors - Primary Palette */
-    --card: 0 0% 98%; /* Very light gray cards */
-    --card-foreground: 0 0% 20%; /* #333333 text on cards */
+    --card: 140 25% 95%; /* Light emerald cards */
+    --card-foreground: 140 80% 25%; /* Dark emerald text on cards */
 
     /* Popover Colors - Primary Palette */
-    --popover: 0 0% 100%; /* White popover */
-    --popover-foreground: 0 0% 20%; /* #333333 text */
+    --popover: 140 30% 97%; /* Light emerald popover */
+    --popover-foreground: 140 80% 25%; /* Dark emerald text */
 
     /* Brand Color */
-    --brand: 0 0% 20%; /* #333333 - Main brand color */
+    --brand: 140 70% 40%; /* Emerald green - Main brand color */
     
-    /* 20% SECONDARY - Dark Gray (Supporting) */
-    --primary: 0 0% 20%; /* #333333 primary */
-    --primary-foreground: 0 0% 100%; /* White text on dark gray */
+    /* 20% SECONDARY - Emerald Green (Supporting) */
+    --primary: 140 70% 40%; /* Emerald green primary */
+    --primary-foreground: 0 0% 100%; /* White text on emerald */
 
     /* Secondary Colors - Supporting Palette */
-    --secondary: 0 0% 30%; /* Lighter gray secondary */
-    --secondary-foreground: 0 0% 100%; /* White text on gray */
+    --secondary: 140 60% 50%; /* Medium emerald secondary */
+    --secondary-foreground: 0 0% 100%; /* White text on emerald */
 
     /* Muted Colors - Supporting Palette */
-    --muted: 0 0% 95%; /* Light gray muted */
-    --muted-foreground: 0 0% 40%; /* Medium gray text */
+    --muted: 140 30% 90%; /* Light muted emerald */
+    --muted-foreground: 140 50% 35%; /* Medium emerald text */
 
-    /* 10% ACCENT - Dark Gray Accent (Standout Elements & CTAs) */
-    --accent: 0 0% 20%; /* #333333 accent */
+    /* 10% ACCENT - Bright Emerald Accent (Standout Elements & CTAs) */
+    --accent: 140 70% 40%; /* Emerald accent */
     --accent-foreground: 0 0% 100%; /* White text */
 
-    /* Gray/Special Accent - for CTAs and highlights */
-    --gold: 0 0% 20%; /* #333333 for buttons */
-    --gold-foreground: 0 0% 100%; /* White text on dark gray */
+    /* Gold/Special Accent - for CTAs and highlights */
+    --gold: 140 70% 40%; /* Emerald for buttons */
+    --gold-foreground: 0 0% 100%; /* White text on emerald */
     
-    /* Bright Gray - for emphasis */
-    --gold-bright: 0 0% 25%; /* Slightly lighter gray */
+    /* Bright Emerald - for emphasis */
+    --gold-bright: 140 75% 45%; /* Bright emerald */
 
-    /* Natural Earth Palette - Soft accents */
-    --rose-gold: 0 0% 90%; /* Soft light gray */
-    --rose-gold-dark: 0 0% 80%; /* Darker light gray */
-    --amber-glow: 0 0% 75%; /* Medium light gray */
-    --warm-light: 0 0% 85%; /* Warm light gray */
+    /* Natural Earth Palette - Soft emerald accents */
+    --rose-gold: 140 40% 85%; /* Soft light emerald */
+    --rose-gold-dark: 140 45% 75%; /* Darker light emerald */
+    --amber-glow: 140 50% 70%; /* Medium light emerald */
+    --warm-light: 140 35% 80%; /* Warm light emerald */
 
     /* Natural Accents Palette - Organic colors */
-    --city-blue: 0 0% 70%; /* Gray accent */
-    --city-cyan: 0 0% 65%; /* Gray accent */
-    --city-amber: 0 0% 60%; /* Gray accent */
-    --city-purple: 0 0% 50%; /* Medium gray */
+    --city-blue: 140 55% 60%; /* Emerald accent */
+    --city-cyan: 140 60% 55%; /* Emerald accent */
+    --city-amber: 140 65% 50%; /* Emerald accent */
+    --city-purple: 140 70% 45%; /* Medium emerald */
 
     /* Destructive */
     --destructive: 0 65% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 0 0% 90%; /* Light gray border */
-    --input: 0 0% 98%; /* Very light gray input */
-    --ring: 0 0% 20%; /* #333333 accent ring */
+    --border: 140 30% 85%; /* Light emerald border */
+    --input: 140 25% 95%; /* Very light emerald input */
+    --ring: 140 70% 40%; /* Emerald accent ring */
 
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* White & Gray Gradients */
-    --gradient-elegant: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
-    --gradient-gold: linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 0%, 30%));
-    --gradient-night: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 98%) 100%);
-    --gradient-bokeh: radial-gradient(ellipse at center, hsl(0, 0%, 20%) 0%, transparent 60%);
+    /* Emerald Green Gradients */
+    --gradient-elegant: linear-gradient(135deg, hsl(140, 30%, 97%), hsl(140, 25%, 95%));
+    --gradient-gold: linear-gradient(135deg, hsl(140, 70%, 40%), hsl(140, 75%, 45%));
+    --gradient-night: linear-gradient(180deg, hsl(140, 30%, 97%) 0%, hsl(140, 25%, 95%) 100%);
+    --gradient-bokeh: radial-gradient(ellipse at center, hsl(140, 70%, 40%) 0%, transparent 60%);
 
-    /* Elegant Gray Shadows */
-    --shadow-elegant: 0 20px 50px -10px rgba(51, 51, 51, 0.15);
-    --shadow-soft: 0 10px 30px -5px rgba(51, 51, 51, 0.1);
-    --shadow-warm: 0 15px 40px -8px rgba(51, 51, 51, 0.12);
-    --shadow-glow: 0 0 30px rgba(51, 51, 51, 0.2);
+    /* Elegant Emerald Shadows */
+    --shadow-elegant: 0 20px 50px -10px rgba(16, 185, 129, 0.15);
+    --shadow-soft: 0 10px 30px -5px rgba(16, 185, 129, 0.1);
+    --shadow-warm: 0 15px 40px -8px rgba(16, 185, 129, 0.12);
+    --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.2);
 
     /* Elegant Typography Scale */
     --font-display: 'Boska', 'Cormorant Garamond', serif; /* Headers - Boska 700 */
@@ -92,14 +92,14 @@
     --transition-elegant: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 0 0% 20%;
+    --sidebar-background: 140 25% 95%;
+    --sidebar-foreground: 140 80% 25%;
+    --sidebar-primary: 140 70% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 25%;
+    --sidebar-accent: 140 75% 45%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: 0 0% 20%;
+    --sidebar-border: 140 30% 85%;
+    --sidebar-ring: 140 70% 40%;
   }
 
   /* Custom Wedding Animations */
@@ -145,10 +145,10 @@
 
   @keyframes goldGlow {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(51, 51, 51, 0.2);
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
     }
     50% {
-      box-shadow: 0 0 40px rgba(51, 51, 51, 0.3);
+      box-shadow: 0 0 40px rgba(16, 185, 129, 0.3);
     }
   }
 
@@ -188,7 +188,7 @@
   body {
     @apply text-foreground font-body;
     font-family: var(--font-body);
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(140, 30%, 97%);
     position: relative;
     min-height: 100vh;
     margin: 0;
@@ -214,7 +214,7 @@
     left: 0;
     right: 0;
     height: 40%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+    background: linear-gradient(180deg, rgba(209, 250, 229, 0.5) 0%, transparent 100%);
     opacity: 0.6;
     z-index: 0;
     pointer-events: none;
@@ -296,7 +296,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(51, 51, 51, 0.3);
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
   }
 
   .gold-underline {
@@ -306,7 +306,7 @@
   .gold-underline::after {
     content: '';
     @apply absolute bottom-0 left-0 h-0.5;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(140, 70%, 40%);
     width: 0;
     transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -340,10 +340,10 @@
 
   /* Glass Morphism Effect */
   .glass-effect {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(209, 250, 229, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(51, 51, 51, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.1);
   }
 
   /* Clean Mobile Styles */
@@ -413,12 +413,12 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(51, 51, 51, 0.3);
+    background-color: rgba(16, 185, 129, 0.3);
     @apply rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(16, 185, 129, 0.5);
   }
 
   /* Remove any unwanted borders */
@@ -446,7 +446,7 @@
     outline-offset: 2px;
   }
 
-  /* Modern Dark Gray Button with Glow */
+  /* Modern Emerald Green Button with Glow */
   .shadow__btn {
     padding: 10px 20px;
     border: none;
@@ -459,7 +459,7 @@
     transition: 0.5s;
     transition-property: box-shadow;
     background: hsl(var(--primary));
-    box-shadow: 0 0 25px rgba(51, 51, 51, 0.3);
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
   }
 
   .shadow__btn:hover {
@@ -525,10 +525,10 @@
     animation-play-state: paused;
   }
 
-  /* Alternating Section Backgrounds - White & Gray Theme */
+  /* Alternating Section Backgrounds - Emerald Green Theme */
   .section-pastel-blue {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 20%);
+    background-color: hsl(140, 30%, 97%);
+    color: hsl(140, 80%, 25%);
     position: relative;
     overflow: hidden;
   }
@@ -539,8 +539,8 @@
   }
 
   .section-hard-blue {
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 0%, 98%));
-    color: hsl(0, 0%, 20%);
+    background: linear-gradient(135deg, hsl(140, 30%, 97%), hsl(140, 25%, 95%));
+    color: hsl(140, 80%, 25%);
     position: relative;
     overflow: hidden;
   }
