@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Gift } from 'lucide-react';
 import { motion } from 'framer-motion';
 import giftQR from '@assets/gift_qr_1761213692679.png';
 
@@ -17,38 +17,36 @@ const GiftSection = () => {
         <div className="absolute top-3/4 left-3/4 w-24 h-24 border border-white/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        {/* Section Header */}
+        {/* Gift Card Container */}
         <motion.div 
-          className="mb-12"
+          className="bg-white/20 border border-white/30 rounded-3xl p-8 max-w-md mx-auto mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.8 }}
         >
+          {/* Gift Icon */}
+          <div className="w-16 h-16 bg-white/30 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Gift className="w-8 h-8 text-white" data-testid="icon-gift" />
+          </div>
+
+          {/* Section Title */}
           <h2 className="text-5xl font-display italic text-white mb-8" data-testid="text-gifts-title">
             Gifts
           </h2>
-        </motion.div>
 
-        {/* Main Gift Message */}
-        <motion.div 
-          className="mb-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 10.1 }}
-        >
-          <div className="bg-white/10 border border-white/20 rounded-xl p-8 shadow-soft">
-            {/* Main Message */}
-            <div className="space-y-4">
-              <p className="text-base font-body text-white leading-relaxed">
+          {/* Gift Message */}
+          <div className="bg-white/20 border border-white/30 rounded-xl p-6">
+            <div className="space-y-2">
+              <p className="text-sm font-body text-white leading-relaxed">
                 With all that we have, we've been truly blessed.
               </p>
-              <p className="text-base font-body text-white leading-relaxed">
+              <p className="text-sm font-body text-white leading-relaxed">
                 Your presence and prayers are all that we request.
               </p>
-              <p className="text-base font-body text-white leading-relaxed">
+              <p className="text-sm font-body text-white leading-relaxed">
                 But if to give nonetheless,
               </p>
-              <p className="text-base font-body text-white leading-relaxed">
+              <p className="text-sm font-body text-white leading-relaxed">
                 Monetary gift is one we suggest.
               </p>
             </div>
