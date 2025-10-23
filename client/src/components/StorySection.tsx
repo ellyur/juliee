@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import { Sparkles, Compass, Heart, BookOpen } from 'lucide-react';
+import { Sparkles, Compass, Heart, BookOpen, MessageCircle, X } from 'lucide-react';
 
 // Import new images
 import promiseImage from '@assets/OUR PROMISE_1760527169725.jpg';
@@ -17,31 +17,55 @@ const StorySection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const horizontalRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState<{ [key: number]: { x: number; y: number } }>({});
-  const [showFullStory, setShowFullStory] = useState<{ [key: number]: boolean }>({});
+  const [showFullStoryModal, setShowFullStoryModal] = useState(false);
+
+  const fullStoryText = `We were classmates back in high school. He was the silent type of boy — always wearing a cap and sitting quietly at the back of the room based on what I remember. I, on the other hand, was a boyish type of girl who only focused on my studies.
+
+We didn't have any special interaction back then — just ordinary classmates.
+
+Fast forward to an unexpected day.
+
+One ordinary day, someone suddenly chatted me on Messenger, saying, "Hi, kumusta?" I replied with just a simple, "Hello."
+
+From that simple hi and hello, our conversation grew longer and deeper — until it lasted for a year. At that time, I was in Cebu while he was in Davao. We started our story through a long-distance connection — just through phone calls and messages, yet it felt like we were always close.
+
+During one of our conversations, I mentioned to him how strict my parents were, even though I had already finished my studies. So, I told him, "If your intentions are pure, come and visit our house — show yourself to my parents."
+
+Then suddenly, during the holiday vacation, he went home to Bicol — and it just so happened that I also went home for my year-end vacation.
+
+When we finally saw each other again for the first time since our high school graduation. I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection. So instead of a hug or handshake… I went for a fist bump! 😂. He looked at me, a bit confused, wondering why a fist bump — but that moment was just so us — awkward, funny, and unforgettable. And while we were both laughing, I could still feel his nervousness — the kind of nervousness that makes your heart beat fast, yet somehow feels so right. 💖
+
+What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume. That I could literally smell him even from afar! 😆. I used to think that every love story had to be like a fairy tale, full of grand gestures, surprises and big moments but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. There was no extravagant proposal, no big scene — just the two of us, choosing each other in the sincerest way. 💕. Giving me the kind of princess treatment I never thought I'd experience. Who would have thought that someone like me who once prided on being independent in everything would one day find comfort in depending on a man not because I needed it but because I chose to.
+
+And now, on our wedding day, we celebrate not just our love but the journey we've shared. From that simple "Hi, kumusta?" to this moment of saying "I do." After five beautiful years together, we're finally starting a new chapter - proof that even the simplest beginnings can lead to the most beautiful forever. 💍`;
 
   const storyCards = [
     {
       id: 1,
-      title: "From Classmates to Soulmates",
+      title: "From Classmates to Connection",
       shortText: "We were classmates in high school — he was the silent type, I focused on my studies. One day, a simple \"Hi, kumusta?\" on Messenger changed everything. That conversation grew deeper and lasted for a year.",
-      fullText: "We were classmates back in high school. He was the silent type of boy — always wearing a cap and sitting quietly at the back of the room. I, on the other hand, was a boyish type of girl who only focused on my studies. We didn't have any special interaction back then — just ordinary classmates. But one ordinary day, someone chatted me on Messenger, saying, \"Hi, kumusta?\" From that simple hi and hello, our conversation grew longer and deeper — until it lasted for a year.",
       image: promiseImage,
-      icon: Sparkles
+      icon: MessageCircle
     },
     {
       id: 2,
-      title: "The First Meeting",
-      shortText: "When we finally met after graduation, I was so nervous I went for a fist bump! 😂 I showed up in pambahay clothes while he wore a white shirt, smelling like he bathed in perfume.",
-      fullText: "When we finally saw each other again for the first time since our high school graduation, I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection with. So instead of a hug or handshake… I went for a fist bump! 😂 What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume.",
+      title: "Long Distance Love",
+      shortText: "I was in Cebu, he was in Davao. Through phone calls and messages, we built a deep connection. I told him: if your intentions are pure, come visit my parents and show yourself.",
       image: futureImage,
       icon: Compass
     },
     {
       id: 3,
+      title: "The Fist Bump Meeting",
+      shortText: "When we finally met after graduation, I was so nervous I went for a fist bump! 😂 I showed up in pambahay clothes while he wore a white shirt, smelling like he bathed in perfume.",
+      image: promiseImage,
+      icon: Sparkles
+    },
+    {
+      id: 4,
       title: "Our Forever",
       shortText: "Our love story wasn't a fairy tale — it was made of simple gestures and genuine love. After five beautiful years together, we're starting a new chapter. 💍",
-      fullText: "I used to think that every love story had to be like a fairy tale, full of grand gestures and big moments, but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. Who would have thought that someone like me would one day find comfort in depending on a man — not because I needed it but because I chose to. After five beautiful years together, we're finally starting a new chapter — proof that even the simplest beginnings can lead to the most beautiful forever. 💍",
-      image: promiseImage,
+      image: futureImage,
       icon: Heart
     }
   ];
@@ -216,18 +240,18 @@ const StorySection = () => {
                   </h3>
                   
                   <p className="text-lg sm:text-xl leading-relaxed text-white/90" data-testid={`text-story-card-${card.id}-text`}>
-                    {showFullStory[card.id] ? card.fullText : card.shortText}
+                    {card.shortText}
                   </p>
 
                   {/* Read Full Story Button - Only on last card */}
-                  {card.id === 3 && (
+                  {card.id === 4 && (
                     <button
-                      onClick={() => setShowFullStory(prev => ({ ...prev, [card.id]: !prev[card.id] }))}
-                      className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-all duration-300 border border-white/20 hover:border-white/40"
+                      onClick={() => setShowFullStoryModal(true)}
+                      className="inline-flex items-center gap-2 mt-4 px-8 py-4 bg-white text-emerald-600 hover:bg-white/90 rounded-lg transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
                       data-testid="button-read-full-story"
                     >
-                      <BookOpen className="w-4 h-4" />
-                      {showFullStory[card.id] ? 'Show Less' : 'Read Full Story'}
+                      <BookOpen className="w-5 h-5" />
+                      Read Full Story
                     </button>
                   )}
 
@@ -325,6 +349,52 @@ const StorySection = () => {
           </div>
         </div>
       </div>
+
+      {/* Full Story Modal */}
+      {showFullStoryModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+          onClick={() => setShowFullStoryModal(false)}
+          data-testid="modal-full-story-overlay"
+        >
+          <div 
+            className="relative w-full max-w-3xl max-h-[85vh] overflow-y-auto bg-white rounded-lg shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+            data-testid="modal-full-story-content"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setShowFullStoryModal(false)}
+              className="sticky top-4 right-4 float-right z-10 p-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full transition-colors duration-200 shadow-lg"
+              data-testid="button-close-full-story"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            {/* Story Content */}
+            <div className="p-8 md:p-12">
+              <h2 className="text-3xl md:text-4xl font-script italic text-emerald-600 mb-8 text-center">
+                Our Love Story
+              </h2>
+              
+              <div className="prose prose-lg max-w-none">
+                {fullStoryText.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="text-gray-700 leading-relaxed mb-4 text-justify">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+
+              <div className="mt-8 flex justify-center">
+                <svg className="w-12 h-12 text-emerald-600 animate-pulse" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.04L12,21.35Z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </motion.section>
   );
 };

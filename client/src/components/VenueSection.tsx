@@ -13,7 +13,6 @@ const VenueSection = () => {
       title: 'Ceremony',
       name: 'Our Lady of the Miraculous Medal Parish Church',
       address: 'Our Lady of the Miraculous Medal Parish Church',
-      image: ceremonyImage,
       mapUrl: 'https://maps.app.goo.gl/hkfzuQDpcTo9dFkU9',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Our+Lady+of+the+Miraculous+Medal+Parish+Church&zoom=15',
       description: 'Join us at Our Lady of the Miraculous Medal Parish Church as we exchange our vows and begin our journey together in the presence of God, family, and friends.',
@@ -80,17 +79,19 @@ const VenueSection = () => {
             </div>
 
             {/* Venue Image */}
-            <div className="px-8 pb-8">
-              <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
-                <img
-                  src={venue.image}
-                  alt={venue.name}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  data-testid={`img-${venue.title.toLowerCase()}-venue`}
-                />
+            {venue.image && (
+              <div className="px-8 pb-8">
+                <div className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden">
+                  <img
+                    src={venue.image}
+                    alt={venue.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    data-testid={`img-${venue.title.toLowerCase()}-venue`}
+                  />
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Content Grid */}
             <div className="grid md:grid-cols-2 gap-8 px-8 pb-8">
