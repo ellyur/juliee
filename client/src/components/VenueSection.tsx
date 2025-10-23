@@ -25,7 +25,7 @@ const VenueSection = () => {
       name: 'STA. JUSTINA BRGY. FUNCTION HALL',
       address: 'Sta. Justina',
       image: ceremonyImage,
-      mapUrl: 'https://maps.google.com',
+      mapUrl: 'https://maps.app.goo.gl/3Z2nqhpdKRPmWQs66',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Sta.+Justina+Function+Hall&zoom=15',
       description: 'Join us at the Sta. Justina Brgy. Function Hall for our wedding reception. Celebrate with us as we continue our special day with dinner, dancing, and memories.',
       details: 'Reception follows immediately after the ceremony. Dinner will be served.',
