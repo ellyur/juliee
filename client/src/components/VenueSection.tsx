@@ -2,6 +2,7 @@
 import { MapPin, ExternalLink, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
+import ceremonyImage from '@assets/church_1761212838572.jpg';
 
 const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();
@@ -10,7 +11,7 @@ const VenueSection = () => {
       title: 'Ceremony',
       name: 'Our Lady of the Miraculous Medal Parish Church',
       address: 'Our Lady of the Miraculous Medal Parish Church',
-      image: undefined,
+      image: ceremonyImage,
       mapUrl: 'https://maps.app.goo.gl/hkfzuQDpcTo9dFkU9',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Our+Lady+of+the+Miraculous+Medal+Parish+Church&zoom=15',
       description: 'Join us at Our Lady of the Miraculous Medal Parish Church as we exchange our vows and begin our journey together in the presence of God, family, and friends.',
