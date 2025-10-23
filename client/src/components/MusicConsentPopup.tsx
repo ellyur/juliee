@@ -26,7 +26,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-10 md:p-12 max-w-md w-full shadow-2xl"
+            className="bg-white rounded-2xl p-10 md:p-12 max-w-md w-full shadow-2xl"
           >
             <div className="text-center space-y-8">
               <motion.div
@@ -35,15 +35,15 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
                 className="flex justify-center"
               >
-                <Music className="h-16 w-16 text-emerald-600 dark:text-emerald-400" strokeWidth={1.5} />
+                <Music className="h-16 w-16 text-emerald-600" strokeWidth={1.5} />
               </motion.div>
               
               <div className="space-y-3">
-                <h2 className="text-2xl md:text-3xl font-medium text-gray-800 dark:text-white">
+                <h2 className="text-2xl md:text-3xl font-medium text-emerald-700">
                   Play music?
                 </h2>
                 
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+                <p className="text-emerald-600 leading-relaxed text-sm md:text-base">
                   Enhance your experience with background music
                 </p>
               </div>
@@ -60,7 +60,7 @@ const MusicConsentPopup = ({ onConsent, isVisible }: MusicConsentPopupProps) => 
                 <Button
                   onClick={() => handleConsent(false)}
                   variant="ghost"
-                  className="w-full text-gray-600 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/30 font-medium py-6 px-6 rounded-lg transition-all duration-200"
+                  className="w-full text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 font-medium py-6 px-6 rounded-lg transition-all duration-200"
                   data-testid="button-skip-music"
                 >
                   <VolumeX className="h-5 w-5 mr-2" />
