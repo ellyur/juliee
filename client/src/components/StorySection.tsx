@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import { Sparkles, Compass, Heart } from 'lucide-react';
+import { Sparkles, Compass, Heart, BookOpen } from 'lucide-react';
 
 // Import new images
 import promiseImage from '@assets/OUR PROMISE_1760527169725.jpg';
@@ -17,26 +17,30 @@ const StorySection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const horizontalRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState<{ [key: number]: { x: number; y: number } }>({});
+  const [showFullStory, setShowFullStory] = useState<{ [key: number]: boolean }>({});
 
   const storyCards = [
     {
       id: 1,
       title: "From Classmates to Soulmates",
-      text: "We were classmates back in high school. He was the silent type of boy — always wearing a cap and sitting quietly at the back of the room. I, on the other hand, was a boyish type of girl who only focused on my studies. We didn't have any special interaction back then — just ordinary classmates. But one ordinary day, someone chatted me on Messenger, saying, \"Hi, kumusta?\" From that simple hi and hello, our conversation grew longer and deeper — until it lasted for a year.",
+      shortText: "We were classmates in high school — he was the silent type, I focused on my studies. One day, a simple \"Hi, kumusta?\" on Messenger changed everything. That conversation grew deeper and lasted for a year.",
+      fullText: "We were classmates back in high school. He was the silent type of boy — always wearing a cap and sitting quietly at the back of the room. I, on the other hand, was a boyish type of girl who only focused on my studies. We didn't have any special interaction back then — just ordinary classmates. But one ordinary day, someone chatted me on Messenger, saying, \"Hi, kumusta?\" From that simple hi and hello, our conversation grew longer and deeper — until it lasted for a year.",
       image: promiseImage,
       icon: Sparkles
     },
     {
       id: 2,
       title: "The First Meeting",
-      text: "When we finally saw each other again for the first time since our high school graduation, I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection with. So instead of a hug or handshake… I went for a fist bump! 😂 What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume.",
+      shortText: "When we finally met after graduation, I was so nervous I went for a fist bump! 😂 I showed up in pambahay clothes while he wore a white shirt, smelling like he bathed in perfume.",
+      fullText: "When we finally saw each other again for the first time since our high school graduation, I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection with. So instead of a hug or handshake… I went for a fist bump! 😂 What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume.",
       image: futureImage,
       icon: Compass
     },
     {
       id: 3,
       title: "Our Forever",
-      text: "I used to think that every love story had to be like a fairy tale, full of grand gestures and big moments, but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. Who would have thought that someone like me would one day find comfort in depending on a man — not because I needed it but because I chose to. After five beautiful years together, we're finally starting a new chapter — proof that even the simplest beginnings can lead to the most beautiful forever. 💍",
+      shortText: "Our love story wasn't a fairy tale — it was made of simple gestures and genuine love. After five beautiful years together, we're starting a new chapter. 💍",
+      fullText: "I used to think that every love story had to be like a fairy tale, full of grand gestures and big moments, but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. Who would have thought that someone like me would one day find comfort in depending on a man — not because I needed it but because I chose to. After five beautiful years together, we're finally starting a new chapter — proof that even the simplest beginnings can lead to the most beautiful forever. 💍",
       image: promiseImage,
       icon: Heart
     }
@@ -212,8 +216,20 @@ const StorySection = () => {
                   </h3>
                   
                   <p className="text-lg sm:text-xl leading-relaxed text-white/90" data-testid={`text-story-card-${card.id}-text`}>
-                    {card.text}
+                    {showFullStory[card.id] ? card.fullText : card.shortText}
                   </p>
+
+                  {/* Read Full Story Button - Only on last card */}
+                  {card.id === 3 && (
+                    <button
+                      onClick={() => setShowFullStory(prev => ({ ...prev, [card.id]: !prev[card.id] }))}
+                      className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-all duration-300 border border-white/20 hover:border-white/40"
+                      data-testid="button-read-full-story"
+                    >
+                      <BookOpen className="w-4 h-4" />
+                      {showFullStory[card.id] ? 'Show Less' : 'Read Full Story'}
+                    </button>
+                  )}
 
                   {/* SVG Decorative Element */}
                   <div className="flex items-center space-x-4 pt-4 sm:pt-6">
