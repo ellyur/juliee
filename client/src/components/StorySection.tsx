@@ -388,10 +388,18 @@ And now, on our wedding day, we celebrate not just our love but the journey we'v
                 ))}
               </div>
 
-              <div className="mt-8 flex justify-center">
+              <div className="mt-8 flex flex-col items-center gap-6">
                 <svg className="w-12 h-12 text-emerald-600 animate-pulse" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.04L12,21.35Z"/>
                 </svg>
+                
+                <button
+                  onClick={() => setShowFullStoryModal(false)}
+                  className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl"
+                  data-testid="button-exit-full-story"
+                >
+                  Exit
+                </button>
               </div>
             </div>
           </div>
