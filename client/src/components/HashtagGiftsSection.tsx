@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Camera, Gift } from 'lucide-react';
+import giftQR from '@assets/gift_qr_1761218317807.png';
 
 const HashtagGiftsSection = () => {
   return (
@@ -97,7 +98,7 @@ const HashtagGiftsSection = () => {
           </motion.h2>
 
           <motion.div
-            className="bg-white/10 border border-white/20 rounded-xl p-6 max-w-2xl mx-auto"
+            className="bg-white/10 border border-white/20 rounded-xl p-6 max-w-2xl mx-auto mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
@@ -114,6 +115,29 @@ const HashtagGiftsSection = () => {
               <br />
               Monetary gift is one we suggest.
             </p>
+          </motion.div>
+
+          {/* Payment QR Code */}
+          <motion.div
+            className="max-w-md mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+          >
+            <div className="bg-white rounded-xl p-6 shadow-lg">
+              <div className="text-center">
+                <img 
+                  src={giftQR}
+                  alt="Payment QR Code"
+                  className="w-full max-w-xs mx-auto object-contain"
+                  data-testid="img-gift-qr-hashtag"
+                />
+                <p className="text-sm text-gray-600 mt-4">
+                  BDO to BDO transfers are free.<br />
+                  Fees may apply for non-BDO transfers.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
