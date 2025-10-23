@@ -13,6 +13,7 @@ const VenueSection = () => {
       title: 'Ceremony',
       name: 'Our Lady of the Miraculous Medal Parish Church',
       address: 'Our Lady of the Miraculous Medal Parish Church',
+      image: undefined,
       mapUrl: 'https://maps.app.goo.gl/hkfzuQDpcTo9dFkU9',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Our+Lady+of+the+Miraculous+Medal+Parish+Church&zoom=15',
       description: 'Join us at Our Lady of the Miraculous Medal Parish Church as we exchange our vows and begin our journey together in the presence of God, family, and friends.',
@@ -23,12 +24,12 @@ const VenueSection = () => {
       title: 'Reception',
       name: 'STA. JUSTINA BRGY. FUNCTION HALL',
       address: 'Sta. Justina',
-      image: ceremonyImage,
+      image: undefined,
       mapUrl: 'https://maps.app.goo.gl/3Z2nqhpdKRPmWQs66',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Sta.+Justina+Function+Hall&zoom=15',
       description: 'Join us at the Sta. Justina Brgy. Function Hall for our wedding reception. Celebrate with us as we continue our special day with dinner, dancing, and memories.',
       details: 'Reception follows immediately after the ceremony. Dinner will be served.',
-      startTime: 'After Ceremony'
+      startTime: '10:00 AM'
     }
   ];
 
