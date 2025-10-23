@@ -25,7 +25,7 @@ const VenueSection = () => {
   return (
     <motion.section 
       id="venue" 
-      className="section-pastel-blue py-12 px-4"
+      className="bg-emerald-600 py-12 px-4"
       initial={animationsEnabled ? { opacity: 0 } : { opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={animationsEnabled ? { duration: 1, delay: 6.5 } : { duration: 0 }}
@@ -37,7 +37,7 @@ const VenueSection = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={animationsEnabled ? { duration: 0.8, delay: 6.8 } : { duration: 0 }}
       >
-        <h1 className="text-5xl md:text-6xl font-display italic text-foreground mb-2" data-testid="text-venue-section-title">
+        <h1 className="text-5xl md:text-6xl font-display italic text-white mb-2" data-testid="text-venue-section-title">
           Venue
         </h1>
       </motion.div>
@@ -54,13 +54,13 @@ const VenueSection = () => {
           >
             {/* Header */}
             <div className="text-center py-12 px-6">
-              <h2 className="text-3xl md:text-4xl font-display italic text-foreground mb-4" data-testid={`text-${venue.title.toLowerCase()}-title`}>
+              <h2 className="text-3xl md:text-4xl font-display italic text-white mb-4" data-testid={`text-${venue.title.toLowerCase()}-title`}>
                 {venue.title}
               </h2>
-              <h3 className="text-xl md:text-2xl font-display italic text-foreground/80 mb-3" data-testid={`text-${venue.title.toLowerCase()}-name`}>
+              <h3 className="text-xl md:text-2xl font-display italic text-white/80 mb-3" data-testid={`text-${venue.title.toLowerCase()}-name`}>
                 {venue.name}
               </h3>
-              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 text-white/80">
                 <MapPin className="w-4 h-4" />
                 <p className="text-sm" data-testid={`text-${venue.title.toLowerCase()}-address`}>
                   {venue.address}
@@ -85,20 +85,20 @@ const VenueSection = () => {
             <div className="grid md:grid-cols-2 gap-8 px-8 pb-8">
               {/* About Section */}
               <div className="space-y-4">
-                <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground/60 border-l-2 border-primary pl-3">
+                <h4 className="text-xs font-semibold uppercase tracking-widest text-white/60 border-l-2 border-white pl-3">
                   About the Venue
                 </h4>
-                <p className="text-foreground/80 leading-relaxed pl-3" data-testid={`text-${venue.title.toLowerCase()}-description`}>
+                <p className="text-white/80 leading-relaxed pl-3" data-testid={`text-${venue.title.toLowerCase()}-description`}>
                   {venue.description}
                 </p>
-                <p className="text-sm text-foreground/70 italic pl-3" data-testid={`text-${venue.title.toLowerCase()}-details`}>
+                <p className="text-sm text-white/70 italic pl-3" data-testid={`text-${venue.title.toLowerCase()}-details`}>
                   {venue.details}
                 </p>
               </div>
 
               {/* Map Section */}
               <div className="space-y-4">
-                <h4 className="text-xs font-semibold uppercase tracking-widest text-foreground/60 border-l-2 border-primary pl-3">
+                <h4 className="text-xs font-semibold uppercase tracking-widest text-white/60 border-l-2 border-white pl-3">
                   Location Map
                 </h4>
                 <div className="relative h-64 rounded-xl overflow-hidden shadow-md">
@@ -117,14 +117,14 @@ const VenueSection = () => {
             </div>
 
             {/* Footer */}
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-8 pb-8 pt-4 border-t border-primary/20 mx-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4 px-8 pb-8 pt-4 border-t border-white/20 mx-8">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Clock className="w-5 h-5 text-primary" />
+                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-xs text-foreground/60 uppercase tracking-wide">Start Time</p>
-                  <p className="text-lg font-semibold text-foreground" data-testid={`text-${venue.title.toLowerCase()}-start-time`}>
+                  <p className="text-xs text-white/60 uppercase tracking-wide">Start Time</p>
+                  <p className="text-lg font-semibold text-white" data-testid={`text-${venue.title.toLowerCase()}-start-time`}>
                     {venue.startTime}
                   </p>
                 </div>
@@ -134,7 +134,7 @@ const VenueSection = () => {
                 href={venue.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-foreground text-background rounded-lg hover:bg-foreground/90 transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-600 rounded-lg hover:bg-white/90 transition-all duration-300 font-medium shadow-lg hover:shadow-xl"
                 data-testid={`button-${venue.title.toLowerCase()}-location`}
               >
                 Get Directions
