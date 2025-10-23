@@ -1,6 +1,6 @@
 import { Gift } from 'lucide-react';
 import { motion } from 'framer-motion';
-import giftQR from '@assets/gift_qr_1761216320698.png';
+import giftQR from '@assets/gift_qr_1761217362043.png';
 
 const GiftSection = () => {
   return (
