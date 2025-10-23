@@ -92,7 +92,7 @@ const MusicControl = ({ audioRef }: MusicControlProps) => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 20 }}
-                className="flex items-center gap-2 bg-black/50 backdrop-blur-md p-2 rounded-full pr-3 md:pr-4"
+                className="flex items-center gap-2 bg-emerald-600/90 backdrop-blur-md p-2 rounded-full pr-3 md:pr-4"
               >
                 <button 
                   onClick={toggleMute} 
@@ -126,12 +126,12 @@ const MusicControl = ({ audioRef }: MusicControlProps) => {
           
           <motion.button
             onClick={toggleMusic}
-            className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-emerald-400/50"
             style={{
-              background: 'linear-gradient(135deg, rgba(23, 22, 16, 0.9) 0%, rgba(51, 51, 51, 0.8) 100%)',
+              background: 'linear-gradient(135deg, rgb(16, 185, 129) 0%, rgb(5, 150, 105) 100%)',
               backdropFilter: 'blur(10px)',
-              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)'
+              boxShadow: '0 4px 16px rgba(16, 185, 129, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
+              border: '1px solid rgba(255, 255, 255, 0.3)'
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
