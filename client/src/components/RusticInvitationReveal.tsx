@@ -6,6 +6,8 @@ import monogram from '../assets/I&R-monogram.png';
 
 import MONOGRAM_removebg_preview from "@assets/MONOGRAM-removebg-preview.png";
 
+import Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview from "@assets/Gemini_Generated_Image_iynfgviynfgviynf-removebg-preview.png";
+
 interface RusticInvitationRevealProps {
   animationsEnabled: boolean;
 }
@@ -196,7 +198,7 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
               <circle cx="30" cy="30" r="24" fill="black"/>
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
-              <img src={MONOGRAM_removebg_preview} alt="I&R" className="h-16 w-16 object-contain" />
+              <img src={Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview} alt="I&R" className="h-16 w-16 object-contain" />
             </div>
             {/* Wax drips */}
             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-4 h-3 bg-gradient-to-b from-white to-transparent rounded-b-full opacity-70"/>
