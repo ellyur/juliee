@@ -98,13 +98,13 @@ const HashtagGiftsSection = () => {
           </motion.h2>
 
           <motion.div
-            className="bg-white border border-white/20 rounded-xl p-6 max-w-2xl mx-auto mb-6"
+            className="bg-white/10 border border-white/20 rounded-xl p-6 max-w-2xl mx-auto mb-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
           >
             <p 
-              className="text-lg text-gray-700 leading-relaxed"
+              className="text-lg text-white leading-relaxed"
               data-testid="text-gifts-message"
             >
               With all that we have, we've been truly blessed.

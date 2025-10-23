@@ -194,8 +194,8 @@ const RusticInvitationReveal = ({ animationsEnabled }: RusticInvitationRevealPro
         <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
           <div className="relative">
             <svg width="60" height="60" viewBox="0 0 60 60">
-              <circle cx="30" cy="30" r="28" fill="black" opacity="0.9"/>
-              <circle cx="30" cy="30" r="24" fill="black"/>
+              <circle cx="30" cy="30" r="28" fill="white" opacity="0.9"/>
+              <circle cx="30" cy="30" r="24" fill="white"/>
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
               <img src={Gemini_Generated_Image_iynfgviynfgviynf_removebg_preview} alt="I&R" className="h-16 w-16 object-contain" />
