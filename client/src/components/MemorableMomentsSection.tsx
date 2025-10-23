@@ -4,18 +4,21 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/compone
 import { X } from 'lucide-react';
 
 // Prenup photos
-import prenup1 from '@assets/1_1760542653480.jpg';
-import prenup2 from '@assets/2_1760542653481.jpg';
-import prenup3 from '@assets/3_1760542663127.jpg';
-import prenup4 from '@assets/4_1760542663127.jpg';
-import prenup5 from '@assets/5_1760542663127.jpg';
-import prenup6 from '@assets/6_1760542663128.jpg';
-import prenup7 from '@assets/7_1760542663128.jpg';
-import prenup8 from '@assets/8_1760542663129.jpg';
-import prenup9 from '@assets/9_1760542663129.jpg';
-import prenup10 from '@assets/10_1760542663130.jpg';
-import prenup11 from '@assets/11_1760542663130.jpg';
-import prenup12 from '@assets/12_1760542663131.jpg';
+import prenup1 from '@assets/prenup1_1761211706827.jpg';
+import prenup2 from '@assets/prenup2_1761211706827.jpg';
+import prenup3 from '@assets/prenup3_1761211838864.jpg';
+import prenup4 from '@assets/prenup4_1761211838866.jpg';
+import prenup5 from '@assets/prenup5_1761211838868.jpg';
+import prenup6 from '@assets/prenup6_1761211838869.jpg';
+import prenup7 from '@assets/prenup7_1761211838869.jpg';
+import prenup8 from '@assets/prenup8_1761211838870.jpg';
+import prenup9 from '@assets/prenup9_1761211838870.jpg';
+import prenup10 from '@assets/prenup10_1761211838871.jpg';
+import prenup11 from '@assets/prenup11_1761211838871.jpg';
+import prenup12 from '@assets/prenup12_1761211838871.jpg';
+import prenup13 from '@assets/prenup13_1761211838873.jpg';
+import prenup14 from '@assets/prenup14_1761211838874.jpg';
+import prenup15 from '@assets/prenup15_1761211838875.jpg';
 
 const MemorableMomentsSection = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -32,7 +35,10 @@ const MemorableMomentsSection = () => {
     { src: prenup9, alt: "Prenup photo 9", height: "h-72" },
     { src: prenup10, alt: "Prenup photo 10", height: "h-64" },
     { src: prenup11, alt: "Prenup photo 11", height: "h-96" },
-    { src: prenup12, alt: "Prenup photo 12", height: "h-80" }
+    { src: prenup12, alt: "Prenup photo 12", height: "h-80" },
+    { src: prenup13, alt: "Prenup photo 13", height: "h-72" },
+    { src: prenup14, alt: "Prenup photo 14", height: "h-80" },
+    { src: prenup15, alt: "Prenup photo 15", height: "h-96" }
   ];
 
   return (

@@ -6,8 +6,10 @@ import { useAnimationContext } from '@/contexts/AnimationContext';
 import { Sparkles, Compass, Heart, BookOpen, MessageCircle, X } from 'lucide-react';
 
 // Import new images
-import promiseImage from '@assets/OUR PROMISE_1760527169725.jpg';
-import futureImage from '@assets/OUR FUTURE SECTION_1760527169724.jpg';
+import lovestory1 from '@assets/lovestory1_1761211706824.jpg';
+import lovestory2 from '@assets/lovestory2_1761211706824.jpg';
+import lovestory3 from '@assets/lovestory3_1761211706825.jpg';
+import lovestory4 from '@assets/lovestory4_1761211706825.jpg';
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -44,28 +46,28 @@ And now, on our wedding day, we celebrate not just our love but the journey we'v
       id: 1,
       title: "From Classmates to Connection",
       shortText: "We were classmates in high school — he was the silent type, I focused on my studies. One day, a simple \"Hi, kumusta?\" on Messenger changed everything. That conversation grew deeper and lasted for a year.",
-      image: promiseImage,
+      image: lovestory1,
       icon: MessageCircle
     },
     {
       id: 2,
       title: "Long Distance Love",
       shortText: "I was in Cebu, he was in Davao. Through phone calls and messages, we built a deep connection. I told him: if your intentions are pure, come visit my parents and show yourself.",
-      image: futureImage,
+      image: lovestory2,
       icon: Compass
     },
     {
       id: 3,
       title: "The Fist Bump Meeting",
       shortText: "When we finally met after graduation, I was so nervous I went for a fist bump! 😂 I showed up in pambahay clothes while he wore a white shirt, smelling like he bathed in perfume.",
-      image: promiseImage,
+      image: lovestory3,
       icon: Sparkles
     },
     {
       id: 4,
       title: "Our Forever",
       shortText: "Our love story wasn't a fairy tale — it was made of simple gestures and genuine love. After five beautiful years together, we're starting a new chapter. 💍",
-      image: futureImage,
+      image: lovestory4,
       icon: Heart
     }
   ];

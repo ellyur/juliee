@@ -5,9 +5,9 @@ import HeroSection from '@/components/HeroSection';
 import ImageLoop from '@/components/ImageLoop';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 // Cover images and video from attached assets
-import cover1Image from '@assets/12_1760522061653.jpg';
-import cover2Image from '@assets/4_1760528397483.jpg';
-import cover3Image from '@assets/5_1760528397485.jpg';
+import cover1Image from '@assets/cover1_1761211706819.jpg';
+import cover2Image from '@assets/cover2_1761211706819.jpg';
+import cover3Image from '@assets/cover3_1761211706820.jpg';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
@@ -110,13 +110,13 @@ const Index = () => {
           <StorySection />
           <CoverSection
             imageUrl={cover1Image}
-            alt="Isabel & Rustin Wedding Cover Image 1"
+            alt="Julie & Rico Wedding Cover Image 1"
           />
           <ScrollTriggeredTimeline />
           <VenueSection />
           <CoverSection
             imageUrl={cover2Image}
-            alt="Andrei & Sam Wedding Cover Image 2"
+            alt="Julie & Rico Wedding Cover Image 2"
           />
           <DressCodeSection />
           <HashtagGiftsSection />
@@ -125,7 +125,7 @@ const Index = () => {
           <EntourageSection />
           <CoverSection
             imageUrl={cover3Image}
-            alt="Andrei & Sam Wedding Cover Image 3"
+            alt="Julie & Rico Wedding Cover Image 3"
           />
           <FAQSection />
           <Footer />
