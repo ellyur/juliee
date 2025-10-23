@@ -325,10 +325,10 @@ And now, on our wedding day, we celebrate not just our love but the journey we'v
                 
                 <div className="max-w-2xl mx-auto">
                   <p className="text-xl sm:text-2xl leading-relaxed italic mb-4 text-white">
-                    "Above all, clothe yourselves with love, which binds us all together in perfect harmony."
+                    "Love is patient, love is kind."
                   </p>
                   <p className="text-base sm:text-lg font-body text-white/80">
-                    Colossians 3:14
+                    1 Corinthians 13:4
                   </p>
                 </div>
                 
