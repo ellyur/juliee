@@ -45,7 +45,7 @@ const EntourageSection = () => {
             <h3 className="font-display italic text-lg text-white mb-4" data-testid="heading-principal-sponsors">Principal Sponsors</h3>
             <div className="grid grid-cols-2 gap-x-8 gap-y-0.5">
               <p className="text-white font-normal italic text-xs">Hon. Jose Awa</p>
-              <p className="text-white font-normal italic text-xs">Dr. Josephine Doron</p>
+              <p className="text-white font-normal italic text-xs">Dr. Josephine Doroin</p>
               <p className="text-white font-normal italic text-xs">Mr. Ronnie Andoy</p>
               <p className="text-white font-normal italic text-xs">Mrs. Alma Parcero</p>
               <p className="text-white font-normal italic text-xs">Mr. Ruselle Reyel</p>
@@ -131,7 +131,7 @@ const EntourageSection = () => {
             <div data-testid="section-usherettes">
               <h4 className="font-display italic text-sm text-white mb-2">Usherettes</h4>
               <p className="text-white font-normal italic text-xs">Edinisa Salvadora</p>
-              <p className="text-white font-normal italic text-xs">Charlene Bustenerc</p>
+              <p className="text-white font-normal italic text-xs">Charlene Bustenera</p>
               <p className="text-white font-normal italic text-xs">Rochelle Sandrino</p>
               <p className="text-white font-normal italic text-xs">Jessa Mae Boaqueña</p>
               <p className="text-white font-normal italic text-xs">Nica Sheam Boaqueña</p>
