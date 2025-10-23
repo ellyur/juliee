@@ -12,10 +12,6 @@ const ImageLoop = () => {
     imageLoop1,
     imageLoop2,
     imageLoop3,
-    imageLoop4,
-    imageLoop1,
-    imageLoop2,
-    imageLoop3,
     imageLoop4
   ];
 
