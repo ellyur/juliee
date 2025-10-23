@@ -10,15 +10,26 @@ const VenueSection = () => {
   const { animationsEnabled } = useAnimationContext();
   const venues = [
     {
-      title: 'Wedding Venue',
+      title: 'Ceremony',
+      name: 'Our Lady of the Miraculous Medal Parish Church',
+      address: 'Our Lady of the Miraculous Medal Parish Church',
+      image: ceremonyImage,
+      mapUrl: 'https://maps.app.goo.gl/hkfzuQDpcTo9dFkU9',
+      mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Our+Lady+of+the+Miraculous+Medal+Parish+Church&zoom=15',
+      description: 'Join us at Our Lady of the Miraculous Medal Parish Church as we exchange our vows and begin our journey together in the presence of God, family, and friends.',
+      details: 'Guest arrival starts at 7:30 AM. The ceremony begins at 8:00 AM. Please arrive early to be seated.',
+      startTime: '8:00 AM'
+    },
+    {
+      title: 'Reception',
       name: 'STA. JUSTINA BRGY. FUNCTION HALL',
       address: 'Sta. Justina',
       image: ceremonyImage,
       mapUrl: 'https://maps.google.com',
       mapEmbed: 'https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Sta.+Justina+Function+Hall&zoom=15',
-      description: 'Join us at the Sta. Justina Brgy. Function Hall for our wedding celebration. This beautiful venue will witness our vows and host our reception as we begin our journey together.',
-      details: 'Guest arrival starts at 7:30 AM. The ceremony begins at 8:00 AM. Please arrive early to be seated.',
-      startTime: '8:00 AM'
+      description: 'Join us at the Sta. Justina Brgy. Function Hall for our wedding reception. Celebrate with us as we continue our special day with dinner, dancing, and memories.',
+      details: 'Reception follows immediately after the ceremony. Dinner will be served.',
+      startTime: 'After Ceremony'
     }
   ];
 
