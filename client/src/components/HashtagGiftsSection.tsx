@@ -61,7 +61,7 @@ const HashtagGiftsSection = () => {
               Kindly mention us on our social media accounts when you share photos and videos from the celebration.
             </p>
             <div className="bg-white/10 border border-white/20 rounded-lg p-4">
-              <p className="text-2xl font-semibold text-white tracking-wide" data-testid="text-wedding-hashtag">
+              <p className="text-base sm:text-xl md:text-2xl font-semibold text-white tracking-wide break-words" data-testid="text-wedding-hashtag">
                 #aveRICOlorfuljourneywithJULIE
               </p>
             </div>
