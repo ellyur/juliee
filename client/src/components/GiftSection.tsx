@@ -1,11 +1,11 @@
-import { Heart, Gift, Home } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
-import giftQR from '@assets/gift_qr_1761212861711.png';
+import giftQR from '@assets/gift_qr_1761213692679.png';
 
 const GiftSection = () => {
   return (
     <motion.section 
-      className="bg-emerald-600 py-2 px-4 relative overflow-hidden"
+      className="bg-emerald-600 py-12 px-4 relative overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 9.5 }}
@@ -19,13 +19,13 @@ const GiftSection = () => {
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Section Header */}
         <motion.div 
-          className="mb-16"
+          className="mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 9.8 }}
         >
           <h2 className="text-5xl font-display italic text-white mb-8" data-testid="text-gifts-title">
-            Wedding Gifts
+            Gifts
           </h2>
         </motion.div>
 
@@ -36,48 +36,43 @@ const GiftSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 10.1 }}
         >
-          <div className="bg-white/10 border border-white/20 rounded-xl p-12 shadow-soft hover-elegant">
-            {/* Icon */}
-            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-8">
-              <Heart className="w-10 h-10 text-white" />
-            </div>
-
+          <div className="bg-white/10 border border-white/20 rounded-xl p-8 shadow-soft">
             {/* Main Message */}
-            <div className="space-y-6">
-              <p className="text-xl font-body text-white leading-relaxed">
-                As love is what the night is all about, your presence is one we can't celebrate without. But should you still believe that gift is worth giving, monetary gift for our future is a delightful blessing.
+            <div className="space-y-4">
+              <p className="text-base font-body text-white leading-relaxed">
+                With all that we have, we've been truly blessed.
               </p>
-            </div>
-
-            {/* Decorative Elements */}
-            <div className="mt-8 flex justify-center items-center space-x-4">
-              <div className="w-12 h-px bg-white/30"></div>
-              <div className="w-3 h-3 bg-white rounded-full animate-float"></div>
-              <div className="w-12 h-px bg-white/30"></div>
+              <p className="text-base font-body text-white leading-relaxed">
+                Your presence and prayers are all that we request.
+              </p>
+              <p className="text-base font-body text-white leading-relaxed">
+                But if to give nonetheless,
+              </p>
+              <p className="text-base font-body text-white leading-relaxed">
+                Monetary gift is one we suggest.
+              </p>
             </div>
           </div>
         </motion.div>
 
-        {/* Payment Options */}
+        {/* Payment QR Code */}
         <motion.div 
           className="max-w-md mx-auto mb-12"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 10.4 }}
         >
-          {/* GCash Payment */}
-          <div>
-            <div className="bg-white/10 border border-white/20 rounded-xl p-8 shadow-soft hover-elegant">
-              <h3 className="text-lg font-display font-semibold text-white mb-4 text-center">GCash</h3>
-              <div className="text-center mb-4">
-                <img 
-                  src={giftQR}
-                  alt="GCash QR Code"
-                  className="w-64 h-64 mx-auto object-contain"
-                />
-              </div>
-              <p className="text-white leading-relaxed text-center">
-                Scan the QR code above to send your generous gift via GCash
+          <div className="bg-white rounded-xl p-6 shadow-soft">
+            <div className="text-center">
+              <img 
+                src={giftQR}
+                alt="Payment QR Code"
+                className="w-full max-w-xs mx-auto object-contain"
+                data-testid="img-gift-qr"
+              />
+              <p className="text-sm text-gray-600 mt-4">
+                BDO to BDO transfers are free.<br />
+                Fees may apply for non-BDO transfers.
               </p>
             </div>
           </div>
