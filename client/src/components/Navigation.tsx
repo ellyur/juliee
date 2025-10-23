@@ -19,7 +19,7 @@ const Navigation = () => {
     { name: 'Entourage', href: '#entourage' },
     { name: 'Dress Code', href: '#dresscode' },
     { name: 'Prenup Photos', href: '#prenup-photos' },
-    { name: 'RSVP', href: 'https://rustin-isabel-rsvp.replit.app' }
+    { name: 'RSVP', href: '#rsvp' }
   ];
 
   useEffect(() => {
@@ -56,13 +56,6 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (href: string) => {
-    // Check if it's an external link
-    if (href.startsWith('http')) {
-      window.open(href, '_blank', 'noopener,noreferrer');
-      setIsOpen(false);
-      return;
-    }
-    
     const sectionId = href.slice(1); // Remove the # from the href
     const element = document.getElementById(sectionId);
     
