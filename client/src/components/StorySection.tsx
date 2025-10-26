@@ -21,9 +21,9 @@ const StorySection = () => {
   const [mousePosition, setMousePosition] = useState<{ [key: number]: { x: number; y: number } }>({});
   const [showFullStoryModal, setShowFullStoryModal] = useState(false);
 
-  const fullStoryText = `We were classmates back in high school. He was the silent type of boy — always wearing a cap and sitting quietly at the back of the room based on what I remember. I, on the other hand, was a boyish type of girl who only focused on my studies.
+  const fullStoryText = `We were classmates back in high school. As I remember, he was the quiet type of guy who usually sitting on the side with his group of friends. I, on the other hand, was the complete opposite, competitive in class, always aiming for high grades and eager to join every extracurricular activity I could. 
 
-We didn't have any special interaction back then — just ordinary classmates.
+We didn't have any special interaction back then — just ordinary classmates. He even mentioned to me that he used to be afraid of me back then because I had that kind of strong personality the way I talk and act.  
 
 Fast forward to an unexpected day.
 
@@ -33,11 +33,13 @@ From that simple hi and hello, our conversation grew longer and deeper — until
 
 During one of our conversations, I mentioned to him how strict my parents were, even though I had already finished my studies. So, I told him, "If your intentions are pure, come and visit our house — show yourself to my parents."
 
-Then suddenly, during the holiday vacation, he went home to Bicol — and it just so happened that I also went home for my year-end vacation.
+Then suddenly, during the holiday vacation, he went home to Bicol — and it just so happened that I also went home for my year-end vacation. 
 
-When we finally saw each other again for the first time since our high school graduation. I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection. So instead of a hug or handshake… I went for a fist bump! 😂. He looked at me, a bit confused, wondering why a fist bump — but that moment was just so us — awkward, funny, and unforgettable. And while we were both laughing, I could still feel his nervousness — the kind of nervousness that makes your heart beat fast, yet somehow feels so right. 💖
+When we finally saw each other again for the first time since our high school graduation.  I honestly didn't know how to react. It was my first time meeting someone I had already built such a deep connection. So instead of a hug or handshake… I went for a fist bump! 😂. He looked at me, a bit confused, wondering why a fist bump — but that moment was just so us — awkward, funny, and unforgettable. And while we were both laughing, I could still feel his nervousness — the kind of nervousness that makes your heart beat fast, yet somehow feels so right. 💖
 
-What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume. That I could literally smell him even from afar! 😆. I used to think that every love story had to be like a fairy tale, full of grand gestures, surprises and big moments but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. There was no extravagant proposal, no big scene — just the two of us, choosing each other in the sincerest way. 💕. Giving me the kind of princess treatment I never thought I'd experience. Who would have thought that someone like me who once prided on being independent in everything would one day find comfort in depending on a man not because I needed it but because I chose to.
+What made it even funnier was how we showed up that day — I was just wearing my pambahay clothes, while he came in a white shirt, smelling as if he bathed in an entire bottle of perfume. That I could literally smell him even from afar! 😆.
+
+I used to think that every love story had to be like a fairy tale, full of grand gestures, surprises and big moments but ours wasn't like that. Our story was made up of simple gestures, quiet moments, and genuine love. There was no extravagant proposal, no big scene — just the two of us, choosing each other in the sincerest way. 💕. Giving me the kind of princess treatment I never thought I'd experience. Who would have thought that someone like me who once prided on being independent in everything would one day find comfort in depending on a man not because I needed it but because I chose to. 
 
 And now, on our wedding day, we celebrate not just our love but the journey we've shared. From that simple "Hi, kumusta?" to this moment of saying "I do." After five beautiful years together, we're finally starting a new chapter - proof that even the simplest beginnings can lead to the most beautiful forever. 💍`;
 
