@@ -119,13 +119,13 @@ const EntourageSection = () => {
             <div data-testid="section-ushers">
               <h4 className="font-display italic text-sm text-white mb-2">Ushers</h4>
               <p className="text-white font-normal italic text-xs">Aljhun Compuesto</p>
-              <p className="text-white font-normal italic text-xs">Khrizphey Dela Torre</p>
+              <p className="text-white font-normal italic text-xs">Krizthony Dela torre</p>
               <p className="text-white font-normal italic text-xs">John Mher Boaqueña</p>
               <p className="text-white font-normal italic text-xs">John Vic Boaqueña</p>
               <p className="text-white font-normal italic text-xs">Jayson Contreras</p>
               <p className="text-white font-normal italic text-xs">Mark Angelo Babia</p>
               <p className="text-white font-normal italic text-xs">Jay-r Dimaiwat</p>
-              <p className="text-white font-normal italic text-xs">Nico Elaine Balisi</p>
+              <p className="text-white font-normal italic text-xs">Nico shane balisi</p>
               <p className="text-white font-normal italic text-xs">Shyan Michael Bondoc</p>
             </div>
             <div data-testid="section-usherettes">
@@ -134,7 +134,7 @@ const EntourageSection = () => {
               <p className="text-white font-normal italic text-xs">Charlene Bustenera</p>
               <p className="text-white font-normal italic text-xs">Rochelle Sandrino</p>
               <p className="text-white font-normal italic text-xs">Jessa Mae Boaqueña</p>
-              <p className="text-white font-normal italic text-xs">Nica Sheam Boaqueña</p>
+              <p className="text-white font-normal italic text-xs">Nica sheam bongala</p>
               <p className="text-white font-normal italic text-xs">Mylene Dar</p>
               <p className="text-white font-normal italic text-xs">Cindy Belaro</p>
               <p className="text-white font-normal italic text-xs">Raiza Dimaiwat</p>
