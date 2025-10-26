@@ -61,7 +61,7 @@ And now, on our wedding day, we celebrate not just our love but the journey we'v
     {
       id: 3,
       title: "The Fist Bump Meeting",
-      shortText: "When we finally met after graduation, I was so nervous I went for a fist bump! 😂 I showed up in pambahay clothes while he wore a white shirt, smelling like he bathed in perfume.",
+      shortText: "When we meet again after so many years since high school graduation..",
       image: lovestory3,
       icon: Sparkles
     },
