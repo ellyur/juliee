@@ -13,7 +13,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Our Moments', href: '#slideshow' },
     { name: 'Countdown', href: '#countdown' },
-    { name: 'Our Commitment', href: '#story' },
+    { name: 'Our Story', href: '#story' },
     { name: 'Timeline', href: '#timeline' },
     { name: 'Venue', href: '#venue' },
     { name: 'Entourage', href: '#entourage' },

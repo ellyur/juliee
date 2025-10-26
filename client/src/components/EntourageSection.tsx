@@ -92,7 +92,7 @@ const EntourageSection = () => {
           <div className="grid grid-cols-2 gap-8">
             <div data-testid="section-best-man">
               <h4 className="font-display italic text-sm text-white mb-2">Best Man</h4>
-              <p className="text-white font-normal italic text-xs">Mr. Jins Dimaiwat</p>
+              <p className="text-white font-normal italic text-xs">Mr. Cris Dimaiwat</p>
             </div>
             <div data-testid="section-maid-honor">
               <h4 className="font-display italic text-sm text-white mb-2">Maid of Honor</h4>
@@ -150,7 +150,7 @@ const EntourageSection = () => {
               <p className="text-white font-normal italic text-xs">John Lee Gend Dimaiwat</p>
               <p className="text-white font-normal italic text-xs">Mark Leo Dar</p>
               <p className="text-white font-normal italic text-xs">Xian Lee Bacal</p>
-              <p className="text-white font-normal italic text-xs">Khyr Bryce Filio</p>
+              <p className="text-white font-normal italic text-xs">Khayr bryce</p>
             </div>
           </div>
 
