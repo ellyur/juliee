@@ -150,7 +150,7 @@ const EntourageSection = () => {
               <p className="text-white font-normal italic text-xs">John Lee Gend Dimaiwat</p>
               <p className="text-white font-normal italic text-xs">Mark Leo Dar</p>
               <p className="text-white font-normal italic text-xs">Xian Lee Bacal</p>
-              <p className="text-white font-normal italic text-xs">Khayr bryce</p>
+              <p className="text-white font-normal italic text-xs">Khayr bryce Filio</p>
             </div>
           </div>
 
