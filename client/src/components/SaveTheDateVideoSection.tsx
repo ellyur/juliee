@@ -13,10 +13,10 @@ const SaveTheDateVideoSection = () => {
         <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/sC_iOld6cts?autoplay=1&mute=1&loop=1&playlist=sC_iOld6cts&controls=1&modestbranding=1&rel=0"
+            src="https://www.youtube.com/embed/sC_iOld6cts?controls=1&modestbranding=1&rel=0"
             title="Save the Date Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             data-testid="video-save-the-date"
             style={{
