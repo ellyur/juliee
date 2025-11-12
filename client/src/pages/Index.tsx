@@ -120,7 +120,7 @@ const Index = () => {
             alt="Julie & Rico Wedding Cover Image 2"
           />
           <DressCodeSection />
-          <SaveTheDateVideoSection />
+          <SaveTheDateVideoSection audioRef={audioRef} />
           <HashtagGiftsSection />
           <RSVPSection />
           <MemorableMomentsSection />
