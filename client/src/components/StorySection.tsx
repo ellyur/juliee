@@ -47,7 +47,7 @@ And now, on our wedding day, we celebrate not just our love but the journey we'v
     {
       id: 1,
       title: "From Classmates to Connection",
-      shortText: "We were classmates in high school — he was the silent type, I focused on my studies. One day, a simple \"Hi, kumusta?\" on Messenger changed everything. That conversation grew deeper and lasted for a year.",
+      shortText: "We were classmates in high school he was a silent type. I on the other hand was a complete opposite of him. One day, a simple \"Hi, kumusta?\" on Messenger changed everything. That conversation grew deeper and lasted for a year.",
       image: lovestory1,
       icon: MessageCircle
     },
