@@ -13,6 +13,7 @@ import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
 import VenueSection from '@/components/VenueSection';
 import DressCodeSection from '@/components/DressCodeSection';
+import SaveTheDateVideoSection from '@/components/SaveTheDateVideoSection';
 import HashtagGiftsSection from '@/components/HashtagGiftsSection';
 import EntourageSection from '@/components/EntourageSection';
 import RSVPSection from '@/components/RSVPSection';
@@ -119,6 +120,7 @@ const Index = () => {
             alt="Julie & Rico Wedding Cover Image 2"
           />
           <DressCodeSection />
+          <SaveTheDateVideoSection />
           <HashtagGiftsSection />
           <RSVPSection />
           <MemorableMomentsSection />
