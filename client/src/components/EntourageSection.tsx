@@ -46,9 +46,9 @@ const EntourageSection = () => {
             <div className="grid grid-cols-2 gap-x-8 gap-y-0.5">
               <p className="text-white font-normal italic text-xs">Hon. Jose Awa</p>
               <p className="text-white font-normal italic text-xs">Dr. Josephine Doroin</p>
-              <p className="text-white font-normal italic text-xs">Mr. Ronnie Andoy</p>
+              <p className="text-white font-normal italic text-xs">Mr. Ronie Andoy</p>
               <p className="text-white font-normal italic text-xs">Mrs. Alma Parcero</p>
-              <p className="text-white font-normal italic text-xs">Mr. Ruselle Reyel</p>
+              <p className="text-white font-normal italic text-xs">Arch. Russell Reyel</p>
               <p className="text-white font-normal italic text-xs">Mrs. Cheeryl Biag</p>
               <p className="text-white font-normal italic text-xs">Mr. Manuel Grospe</p>
               <p className="text-white font-normal italic text-xs">Mrs. Cerila Pajenago</p>
@@ -83,7 +83,7 @@ const EntourageSection = () => {
           <div>
             <h4 className="font-display italic text-sm text-white mb-2" data-testid="heading-ribbon">Ribbon</h4>
             <div className="grid grid-cols-2 gap-x-8">
-              <p className="text-white font-normal italic text-xs">Mr. Karem Babia</p>
+              <p className="text-white font-normal italic text-xs">Mr. Mark Christian Babia</p>
               <p className="text-white font-normal italic text-xs">Ms. Annie Dimaiwat</p>
             </div>
           </div>

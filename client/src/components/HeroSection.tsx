@@ -65,7 +65,7 @@ const HeroSection = () => {
             <div className="space-y-3">
               <div className="text-center">
                 <p className="text-lg sm:text-xl text-white font-light tracking-wide font-times" data-testid="text-date">
-                  12.29.2025 | Sunday
+                  12.29.2025 | Monday
                 </p>
               </div>
               <div className="text-center">
