@@ -73,7 +73,7 @@ const EntourageSection = () => {
               </div>
               <div data-testid="section-veil">
                 <h4 className="font-normal italic text-xs text-white mb-1">Veil</h4>
-                <p className="text-white font-normal italic text-xs">Mr. John Christopher Fidelson</p>
+                <p className="text-white font-normal italic text-xs">John Kristopher Fidelson</p>
                 <p className="text-white font-normal italic text-xs">Ms. Gina Barra</p>
               </div>
             </div>
