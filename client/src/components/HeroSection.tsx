@@ -1,7 +1,7 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import heroImage from '@assets/image_1762958350129.png';
+import heroImage from '@assets/cover1_1761211706819.jpg';
 
 const HeroSection = () => {
   const [showElements, setShowElements] = useState(false);
