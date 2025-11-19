@@ -1,7 +1,7 @@
 # Wedding Invitation Website
 
 ## Project Overview
-This is a wedding invitation website for Andrei & Sam's wedding on September 7, 2025. The project is a full-stack JavaScript application showcasing a beautiful wedding invitation with multiple sections including hero, slideshow, invitation details, countdown, story, venue information, RSVP, and more.
+This is a wedding invitation website for Rico Dimaiwat & Julie Ann Boaquiña's wedding on December 29, 2025 (Monday). The project is a full-stack JavaScript application showcasing a beautiful wedding invitation with multiple sections including hero, slideshow, invitation details, countdown, story, venue information, RSVP, and more.
 
 ## Project Architecture
 - **Frontend**: React with TypeScript, Vite for bundling, Tailwind CSS + shadcn/ui for styling
